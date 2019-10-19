@@ -26,14 +26,14 @@ namespace FizzBuzzUnitTest4_2
         [Test]
         public void GetOutput_InputIsDivisibleBy5Only_ReturnBuzz()
         {
-            var result = FizzBuzz.GetOutput(3);
+            var result = FizzBuzz.GetOutput(5);
 
             Assert.That(result, Is.EqualTo("Buzz"));
         }
         [Test]
         public void GetOutput_InputIsNotDivisibleBy3Or5_ReturnTheSameNumber()
         {
-            var result = FizzBuzz.GetOutput(3);
+            var result = FizzBuzz.GetOutput(1);
 
             Assert.That(result, Is.EqualTo("1"));
         }
